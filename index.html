@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Portafolio</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#0d1117;
+            color:white;
+            text-align:center;
+            padding:40px;
+        }
+
+        .contenedor{
+            max-width:1200px;
+            margin:auto;
+            padding:20px;
+        }
+
+        .proyectos{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 2px 8px rgba(0,0,0,.15);
+        }
+
+        .card img{
+            width:100%;
+        }
+
+        .card h3{
+            padding:10px;
+        }
+
+        .card p{
+            padding:0 10px;
+        }
+
+        .card a{
+            display:block;
+            text-align:center;
+            padding:10px;
+            background:#238636;
+            color:white;
+            text-decoration:none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>José Álvarez</h1>
+    <p>Analista de Datos | Power BI | SQL | Python</p>
+</header>
+
+<div class="contenedor">
+
+    <h2>Mis Proyectos</h2>
+
+    <div class="proyectos">
+
+        <div class="card">
+            <img src="https://picsum.photos/400/200" alt="">
+            <h3>Dashboard de Ventas</h3>
+            <p>Proyecto Power BI para análisis comercial.</p>
+            <a href="#">Ver Proyecto</a>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/401/200" alt="">
+            <h3>Modelo de Churn</h3>
+            <p>Predicción de abandono de clientes.</p>
+            <a href="#">Ver Proyecto</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
